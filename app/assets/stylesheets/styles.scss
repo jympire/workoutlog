@@ -1,0 +1,219 @@
+$white:                           #ffffff;
+$black:                           #000000;
+$dark:                            #484848;
+$medium:                          #767676;
+$light:                           #9a9da4;
+$primary:                         #4285f4;
+$grey:                            #e8e8e8;
+$border:                          #dce0e0;
+$background:                      #f0f3f5;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 95%;
+}
+
+.container.content {
+  margin-top: 50px;
+}
+
+
+/* Panel */
+.panel.panel-default {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid $border;
+}
+
+
+/* Input */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 1px solid $border;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 300;
+}
+
+textarea {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid $border !important;
+}
+
+input[type="submit"], .button {
+  outline: none;
+  background: $primary;
+  border: 2px solid $primary;
+  width: auto;
+  height: 3em;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  padding: 1em 2em;
+  &:hover {
+      border: 2px solid $primary;
+      background: $primary;
+      color: $white;
+  }
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, select:focus {
+  border: 1px solid $primary !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  outline: 0 none;
+  background-color: $white;
+}
+
+label {
+  color: $dark;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 1px solid $border;
+  padding: 0.5em;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0.5em 0.5em;
+  margin: .25em 0 .25em 0;
+  background-color: $white;
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+}
+
+.select:before {
+  content: '\25bc';
+  position: absolute;
+  color: $dark;
+  top: 40px;
+  right: 30px;
+  transform: scale(0.84, 0.42);
+}
+
+input[type="checkbox"] {
+  height: 1.25em;
+  width: 1.25em;
+  margin-bottom: -0.25em;
+  margin-right: 5px;
+  vertical-align: top;
+  border: 1px solid $border;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  appearance: none;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+}
+
+input[type="checkbox"]:checked:before {
+  content: "\2714";
+  position: absolute;
+  text-align: center;
+  width: 1.25em;
+  color: $primary;
+}
+
+.input-group .form-control {
+    margin: 0px !important;
+}
+
+
+/* Buttons */
+.btn.btn-save {
+  padding: 10px 25px 10px 25px;
+}
+
+
+/* Panels */
+.panel.panel-default.index {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid $border;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: $white;
+  
+  .dropdown-menu hr {
+    margin: 8px;
+  }
+}
+
+.navbar-default {
+  background-color: $white !important;
+  border-radius: 0px;
+  border: none;
+}
+
+.navbar .navbar-nav li a {
+  font-weight: 400;
+  vertical-align: middle !important;
+}
+
+.navbar-default .navbar-brand {
+  color: $primary;
+  font-weight: bold;
+  letter-spacing: 1px;
+  
+  &:hover {
+    color: $primary;
+  }
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: $white;
+  background-image: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: none;
+} 
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: $white;
+}
+
+.navbar .navbar-nav > li.open > a:hover,
+.navbar .navbar-nav > li.open > a:focus,
+.navbar .navbar-nav > li.open > a:active {
+  background-color: $white;
+}

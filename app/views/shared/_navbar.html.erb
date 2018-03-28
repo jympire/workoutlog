@@ -1,0 +1,17 @@
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top" style="margin-bottom: 0px">
+  <div class="container">
+    <div class="navbar-header">
+       
+      <%= link_to "Jimmy's Workout Log", root_path, class: "navbar-brand" %>
+      
+    </div> 
+    <% if (user_signed_in?) %>
+    <ul class="nav navbar-nav navbar-right">       
+      <li class="dropdown">
+        New workout
+      </li>
+    </ul>
+    <% end %>
+  </div>
+</nav>
