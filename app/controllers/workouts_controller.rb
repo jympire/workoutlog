@@ -3,22 +3,23 @@ class WorkoutsController < ApplicationController
   before_action :find_workout, only: [:show, :edit, :update, :destroy]
   
   def index
-    @workouts = Workout.all.order("created_at DESC")
+    @workouts = current_user.workouts
   end
   
   def show
   end
   
   def new
-    @workout = Workout.new
+    @workout = current_user.workouts.build
   end
   
   def create
-    @workout = Workout.new(workout_params)
+    @workout = current_user.workouts.build(workout_params)
     if @workout.save
-      redirect_to @workout
+      redirect_to @workout, notice: "Saved."
     else
-      render 'new'
+      flash[:alert] = "Something went wrong."
+      render :new
     end
   end
   
